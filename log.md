@@ -1,30 +1,64 @@
-# 100 Days Of Code - Log
+# 100 Days Of Code - Tailor Vijay - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+## Work plan - pinned to top
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+Publicly commit to #100DaysOfCode on Twitter - Done
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+Clone 100DaysOfCode Github Repo - Done. Learn how to operate it - Done
 
-**Link to work:** [Calculator App](http://www.example.com)
+[https://github.com/tailorvj/100-days-of-code](https://github.com/tailorvj/100-days-of-code) 
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+### Study subjects for the project
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+* Github first - Pro Git + Github Hello World
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+* JavaScript Daily - CodeWars, find more daily JS resources
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+* React + Redux - Web, Native, VR - Udemy course, find more resources
 
+* Firebase - find resources
 
-### Day 1: June 27, Monday
+* Mongodb - Udemy courses - look into my registered courses, find more resources
 
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
+* Node.js - Udemy course, find more resources
 
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+* Bash shell - find resources
 
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+* Markdown - Find and install Mac OS app - Installed MWeb Lite
+
+* More - D3, SVG, Canvas, WebRTC, Chrome extensions - find resources
+
+Blog posts below this point are in descending date order
+
+## Day 0: December 29, 2017
+
+### **Today's Progress**: Committing, Planning, Setting up shop
+
+I’ve publicly committed to #100DaysOfCode on Twitter
+
+Permalink: [https://twitter.com/tailorvj/status/946747480695128064](https://twitter.com/tailorvj/status/946747480695128064) 
+
+![image alt text](image_0.png)
+
+#### Markdown for the Github repo Log
+
+I installed MWeb Lite app on my Macbook to be able to write MarkDown pages for the Github repo. Haven’t tested it yet, but it’s free, so I’ll look into it first, then make a decision about further steps. 
+
+I’ve also installed a Google Drive script that converts Docs to Markdown and emails them to you. It’s been tested and looks very promising. I think it would be easiest for me to document my progress in a Google Doc, then convert it to MarkDown and publish on the Github repo. 
+
+[https://github.com/mangini/gdocs2md](https://github.com/mangini/gdocs2md) 
+
+### Thoughts
+
+I can actually dive into this for hours unending, which is not what I’m trying to achieve here. This is a medium range project, so after initial push I’d like to stick to one hour a day. I’ve installed a pomodoro timer app on the Macbook to make sure I don’t go beyond the 1 hour limit. I’ll do 2x25 minute sessions every day, with a 5 minute break between them. 
+
+Daily blogging will be done in the last 5 minutes of each day and if I feel like elaborating more about my experience, I may do a longer weekly recap blog post. 
+
+My plan is to get back to the basics of web development and move up from there. First step: Git and Github. 
+
+I have the kindle book Pro Git, which has a very thorough approach towards Git. Tomorrow I would like to read chapter 2 of it, but before I do that, I’m going to run through Github’s own Hello World hands-on tutorial
+
+[https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/) 
+
+### **Link to work**: none
+
