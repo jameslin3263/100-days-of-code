@@ -38,7 +38,7 @@ I’ve publicly committed to #100DaysOfCode on Twitter
 
 Permalink: [https://twitter.com/tailorvj/status/946747480695128064](https://twitter.com/tailorvj/status/946747480695128064) 
 
-![image alt text](image_0.png)
+![2017-12-29 100DaysOfCode committing tweet screenshot](images/20171229-100DaysOfCode-Committing-Tweet.png)
 
 #### Markdown for the Github repo Log
 
