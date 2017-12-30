@@ -1,34 +1,69 @@
 # 100 Days Of Code - Tailor Vijay - Log
 
-## Work plan - pinned to top
+## Day 1: December 30, 2017
 
-Publicly commit to #100DaysOfCode on Twitter - Done
+### **Today's Progress**: Read Pro Git and did Github.com's hello-world tutorial
 
-Clone 100DaysOfCode Github Repo - Done. Learn how to operate it - Done
+#### I've learned and implemented the basics of Git and Github
 
-[https://github.com/tailorvj/100-days-of-code](https://github.com/tailorvj/100-days-of-code) 
+![Initializing the hello-world repo](images/20171230-github-hello-world.png)
 
-### Study subjects for the project
+The [Github hello-world tutorial](https://guides.github.com/activities/hello-world/) teaches you these basic concepts:
+* Create an open source repository
+* Start and manage a new branch
+* Change a file and commit those changes to GitHub
+* Open and merge a Pull Request
 
-* Github first - Pro Git + Github Hello World
+I've immediately implemented what I've learned on this repo by creating a [branch for R1D1 Log update](https://github.com/tailorvj/100-days-of-code/tree/R1D1) and merging it into master after I was done editing. 
 
-* JavaScript Daily - CodeWars, find more daily JS resources
+Pro Git chapter 2 goes a lot deeper (and I have not finished the chapter yet):
+##### Git basics
+* Configure a repo
+* Initialize
+* Begin and stop tracking files
+* Stage and commit changes
+* Ignore certain files and file patterns
+* Undo mistakes
+* Browse project history
+* View changes between commits
+* Push and pull from remote repos
 
-* React + Redux - Web, Native, VR - Udemy course, find more resources
+```
+$ git init to start tracking changes in the current directory
+$ git add *.c starts tracking all files with a .c extension in the current repo
+$ git add README starts tracking changes to the README file in the current repo
+$ got commit -m 'initial project version' commits changes in all tracked files to a version (called a commit)
+$ git clone [url] clones the entire repo from URL including entire commit history to the local computer
+$ git clone [url] foldername clones the project folder to a folder named foldername instead of the original folder name
+```
+Possible states of tracked files: unmodified ->modified then -> staged. There is a cycle here.
+```
+$ git status tells you in which state your files are, on which branch you are and if you have any untracked files.
+$ git add filename/foldername to start tracking file filename or the entire folder foldername.
+$ git add filename/pattern should be used to stage files for commit every time a change is made and you wish to preserve it on the next commit/snapshot
+.gitignore file lists patterns for files to ignore.
+Excercise: experiment with different glob patterns in .gitignore files in different fake repos.
+$ git commit -m "commit message" commits staged changes into a snapshot
+$ git -a -m "commit message" stages and commits all modified tracked files.
+To add a last minute file to your recent commit
+$ git add filename 
+$ git commit --amend
+$ git remote give you a list remote servers you are working with
+$ git remote -v gives you their url's as well
+$ git remote add remoteshortname URL adds a remote from URL and gives it the name remoteshortname.
+$ git fetch remoteshortname gets all the different branches from the remote defined as remoteshortname
+$ git push origin master pushes you latest commit on branch master to the server you originally cloned from (if you have write access)
+```
 
-* Firebase - find resources
+### Thoughts
 
-* Mongodb - Udemy courses - look into my registered courses, find more resources
+Github.com's tutorial has been a lot more effective in both time and effect. I've tried it hands on and immediately put into good use on this very repo. I should be looking for more resources like it and less resources like the Pro Git book, which is concise, but seems like an overkill and a time hog. 
 
-* Node.js - Udemy course, find more resources
+MWeb Lite is a good Markdown editor for Mac OS X. I'm going to keep on using it to edit my MarkDown for theses updates. 
 
-* Bash shell - find resources
+Updating takes a lot more time than it should. 
 
-* Markdown - Find and install Mac OS app - Installed MWeb Lite
-
-* More - D3, SVG, Canvas, WebRTC, Chrome extensions - find resources
-
-Blog posts below this point are in descending date order
+### **Link to work**: https://github.com/tailorvj/hello-world
 
 ## Day 0: December 29, 2017
 
@@ -61,4 +96,3 @@ I have the kindle book Pro Git, which has a very thorough approach towards Git. 
 [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/) 
 
 ### **Link to work**: none
-
