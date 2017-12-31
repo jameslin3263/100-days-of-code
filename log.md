@@ -1,4 +1,126 @@
 # 100 Days Of Code - Tailor Vijay - Log
+My name is Tailor Vijay and I'm a digital nomad. I've taken the 100 Days of Code challenge on December 29th, 2017 and this is where I publish my daily progress. 
+
+[Work Plan](https://github.com/tailorvj/100-days-of-code/blob/master/workplan.md) - It evolves on a daily basis, but basically rotates around React Web, Native and VR. 
+
+I'm a media strategist, so I have a tendency to be very well planned and organized. I start slowly and pick up speed as I go, based on real progress.
+
+[My Twitter updates](https://twitter.com/tailorvj)
+
+01001010111010101001010100101001010010101001010100101011
+
+## Day 2: December 31, 2017 - Happy New Year!!!
+
+### **Today's Progress**: 
+
+* Organized my learning resources in a Trello board. 
+* Found (after struggling with git command line. see below) this [interactive basic git command line tutorial by Github](https://try.github.io/levels/1/challenges/1) 
+
+#### Cloned my 100DaysOfCode repo to my MacBook via Git command line (partial success) and Github GUI for Mac.
+[Display git branch name (link to source)](https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt)
+
+Add following lines to your ~/.bash_profile - **I don't think this has worked actually**.
+```
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
+
+Clone the 100-days-of-code repo to my MacBook. Open terminal and type:
+```
+$ cd workspace
+$ git clone git@github.com:tailorvj/100-days-of-code.git
+```
+
+This didn't work as is. I have to set my public key for this system to work with my github account. 
+
+[Generating a SSH key from the terminal](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+```
+$ ssh-keygen -t rsa -b 4096 -C "emailadderss@domain.com"
+```
+Saved it to the default file name then created a passphrase. 
+
+**Add to ssh-agent**
+
+- [x] Start the ssh-agent in the background
+
+```
+$ eval "$(ssh-agent -s)"
+Agent pid 50505
+```
+- [x] automatically load keys into the ssh-agent and store passphrases in your keychain. edit `~/.ssh/config`
+
+```
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+```
+ 
+- [x] Add your SSH private key to the ssh-agent and store your passphrase in the keychain.
+
+```
+$ ssh-add -K ~/.ssh/id_rsa
+```
+[Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+
+```
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+Created a new SSH key in my Github settings, pasted the fingerprint and saved. - Yayy (Where is the AI that saves us from all that?). Anyway, I should be good to do my github cloning now. **YES, it workded!**
+
+```
+$ cd 100-days-of-code
+$ ls
+```
+
+TODO: after branching, upload screenshot to repo, merge and use the image link here instead of the placeholder
+
+![FAQ.md		images		r1-log.md	rules.md
+README.md	log.md		resources.md	workplan.md](images/20171231-ls.png)
+
+All the files are there indeed. I've already created a R1D2 branch, so now is the time to 
+
+* switch to R1D2 branch 
+
+Started following [Working with branches in Git](http://genomewiki.ucsc.edu/index.php/Working_with_branches_in_Git) wiki page.
+
+```
+$ git checkout R1D2
+```
+
+Stopped here and downloaded https://desktop.github.com/ 
+
+I hope the following screenshots can portray how important visual feedback is when it comes to such complex processes:
+
+![Github GUI Clone](images/20171231-github-gui-clone.png)
+
+![Github GUI branch](images/20171231-github-gui-branch.png)
+
+![Github GUI Added files](images/20171231-github-gui-added-files-to-branch.png) 
+
+See my thoughts for today about this.
+
+Next moves (not today):
+
+* make my daily changes in the branch via command line git.
+* create pull request.
+* evaluate pull request.
+* merge into master.
+
+### Thoughts
+
+I have to admit the concept of Git branching is pretty awesome, but it feels like git command line tool makes life hard for you in general and specifically when it comes to distinguishing exactly what you are working on and how to make the process of cloning from a remote repo, branching, then merging locally, then to the remote repo again, actually work. I will go into it again tomorrow maybe, but for now I'm going to make this commit via the Github GUI client.
+
+After all of this struggle, I went into [#share-resources 100DaysOfCode slack channel](https://100xcode.slack.com/messages/C7F3MT7D2/search/git/) and searched for git. And voila! @ka11away to the rescue. Thanks buddy for the interactive git command line tutorials. 
+
+![@ka11away to the rescue on #share-resources channel search results](images/20171231-ka11way-share-resources-screenshot.png)
+
+I'm starting to see the added value of this documentation process. Collecting and organizing learning resources for this kind of learning process is time consuming. 
+
+### **Link to work**: https://github.com/tailorvj/100-days-of-code/tree/R1D2
 
 ## Day 1: December 30, 2017
 
@@ -96,3 +218,4 @@ I have the kindle book Pro Git, which has a very thorough approach towards Git. 
 [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/) 
 
 ### **Link to work**: none
+

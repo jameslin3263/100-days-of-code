@@ -10,9 +10,10 @@ Clone 100DaysOfCode Github Repo - Done. Learn how to operate it - Done
 
 * Github first -  Pro Git (Read Chapter 2) + Github Hello World - Done. Keep on experimenting with Git and Github. Find more effective resources. 
 
-* JavaScript Daily - CodeWars, find more daily JS resources
+* JavaScript Daily - CodeWars, freecodecamp.org challenges. Find more daily JS resources.
+* Javascript courses - I have quite a few good options.
 
-* React + Redux - Web, Native, VR - Udemy course, find more resources
+* React + Redux - Web, Native, VR - Udemy courses, find more resources
 
 * Firebase - find resources
 
@@ -26,4 +27,3 @@ Clone 100DaysOfCode Github Repo - Done. Learn how to operate it - Done
 
 * More - D3, SVG, Canvas, WebRTC, Chrome extensions - find resources
 
-Blog posts below this point are in descending date order
