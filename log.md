@@ -22,6 +22,10 @@ Just for the sake of good order, since this is the first time I've managed to do
 $ git branch R1D4
 $ git checkout R1D4
 $ git commit -a -m "R1D4 log update"
+$ git status
+status said a file was created but not staged, so I staged it and committed again
+$ git add images/20180102-codeacademy-progress.png
+$ git commit -a -m "R1D4 log update. added missing image"
 $ git push origin R1D4
 $ git checkout master
 $ git merge R1D4
