@@ -32,6 +32,8 @@ $ git merge R1D4
 $ git push origin master
 ```
 
+Added .DS_Store to .gitignore
+
 I think it's time for a little JS challenge :)
 
 CodeAcademy has an [interactive basic JavaScript tutorial](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro). Let's see what's going on there:
