@@ -9,6 +9,21 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 3: January 1, 2018 - Happy New Year!!!
+
+### **Today's Progress**:
+
+* None. I was just working on a last minute project until I was done, which was way too late at night. The client was happy with the result though and I felt satisfied for actually making it in one go :) I hope this doesn't mean I'm going to be working late nights all year long though. 
+
+### Thoughts
+
+I'm going to have such days every now and then and there's nothing I can do about it. Work always comes first. I felt bad about it, but it's not like I was slacking or anything, just doing my job, which is fine. This gives me an opportunity to do double branch merging and pushing on R1D4
+
+### **Link to work**: 
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D3
+
+
 ## Day 2: December 31, 2017 - Happy New Year!!!
 
 ### **Today's Progress**: 
@@ -120,7 +135,9 @@ After all of this struggle, I went into [#share-resources 100DaysOfCode slack ch
 
 I'm starting to see the added value of this documentation process. Collecting and organizing learning resources for this kind of learning process is time consuming. 
 
-### **Link to work**: https://github.com/tailorvj/100-days-of-code/tree/R1D2
+### **Link to work**: 
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D2
 
 ## Day 1: December 30, 2017
 
@@ -185,7 +202,9 @@ MWeb Lite is a good Markdown editor for Mac OS X. I'm going to keep on using it 
 
 Updating takes a lot more time than it should. 
 
-### **Link to work**: https://github.com/tailorvj/hello-world
+### **Link to work**: 
+
+https://github.com/tailorvj/hello-world
 
 ## Day 0: December 29, 2017
 
@@ -217,5 +236,7 @@ I have the kindle book Pro Git, which has a very thorough approach towards Git. 
 
 [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/) 
 
-### **Link to work**: none
+### **Link to work**: 
+
+none
 
