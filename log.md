@@ -8,6 +8,92 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 [My Twitter updates](https://twitter.com/tailorvj)
 
 01001010111010101001010100101001010010101001010100101011
+## Day 4: January 2, 2018 - Local and remote git branching and merging from the command line like a boss
+
+### **Today's Progress**:
+
+After a couple of sessions with sessions on https://try.github.io/levels/1/challenges/1 and using http://rogerdudler.github.io/git-guide/ as reference, I started branching and merging local and remote with confidence from the command line. 
+
+Added the guide as a resource in my Trello board.
+
+Just for the sake of good order, since this is the first time I've managed to do branching and merging from the git command line, here is the list of commands I used to publish this update on the Github repo:
+
+```
+$ git branch R1D4
+$ git checkout R1D4
+$ git commit -a -m "R1D4 log update"
+$ git push origin R1D4
+$ git checkout master
+$ git merge R1D4
+$ git push origin master
+```
+
+I think it's time for a little JS challenge :)
+
+CodeAcademy has an [interactive basic JavaScript tutorial](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro). Let's see what's going on there:
+
+```
+console.log('any string');
+```
+
+#### Data types
+
+* Strings ('anything inside quotation marks, single or double')
+* Numbers (any number, including floating point)
+* Booleans
+* null
+
+I actually remember reading that in ES6 there are 5 data types. I'll look into it later. 
+
+#### Math operators (for numbers)
+
+1.	Add: +
+2.	Subtract: -
+3.	Multiply: *
+4.	Divide: /
+
+#### Built-in JavaScript objects
+
+**String.prototype** (Instance required) properties and methods() [MDN String reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype):
+
+* .toUpperCase()
+* .startsWith()
+* .length
+* .trim()
+
+**Math** (Library, no instance required) object methods() [MDN Math reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+* Math.random()
+* Math.floor(x)
+* Math.ceil(x)
+
+**Number** (Library, no instance required) object methods() [MDN Number reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+* .isInteger(x)
+
+```
+// single line comment
+
+/*
+multi
+line
+comment
+*/
+```
+
+### Thoughts
+
+Interactive tutorials with good visual reference material to back it up while I work, combined with some Googling, seems to be the right combination for me. 
+
+I've been pondering the creation of a flash card collection for memorization purposes, but daily practice is also great. Maybe I'll develop an app for that later. 
+
+Anyhow, It feels good to go back to the basics. 
+
+### **Link to work**: 
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D4
+
+![CodeAcademy progress](images/20180102-codeacademy-progress.png)
 
 ## Day 3: January 1, 2018 - Happy New Year!!!
 
@@ -35,6 +121,7 @@ https://github.com/tailorvj/100-days-of-code/tree/R1D3
 [Display git branch name (link to source)](https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt)
 
 Add following lines to your ~/.bash_profile - **I don't think this has worked actually**.
+
 ```
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
