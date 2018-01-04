@@ -8,6 +8,17 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 [My Twitter updates](https://twitter.com/tailorvj)
 
 01001010111010101001010100101001010010101001010100101011
+
+## Day 5: January 3, 2018
+
+### **Today's Progress**:
+
+* None. 2nd late night work day this week. 
+
+### **Thoughts**:
+
+I must stop working so hard?! Phew
+
 ## Day 4: January 2, 2018 - Local and remote git branching and merging from the command line like a boss
 
 ### **Today's Progress**:
