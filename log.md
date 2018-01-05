@@ -9,6 +9,67 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 6: January 5, 2018 - Git knowhow is getting stable, started a daily JS routine 36 challenges on free code camp
+
+![Free Code Camp progress](images/20180104-freecodecamp-challenge-count.png)
+
+
+### **Today's Progress**:
+
+Added https://www.freecodecamp.org to my daily JS routine, on top of https://www.codeacademy.com.
+
+JavaScript dojo:
+
+According to [free code camp](https://www.freecodecamp.org/challenges/declare-javascript-variables), there are 7 types of data in JavaScript nowadays. 
+
+Just a few days ago I came across a (not so old) course that said there were 4 data types. The updated version is (new ones in **bold**):
+
+* **undefined**, 
+* null, 
+* boolean, 
+* string, 
+* **symbol**, 
+* number, 
+* and **object**.
+
+Variable initialization and assigninment:
+
+```
+var a = 7;
+var b = a;
+```
+
+Uninitialized variables are of type undefined;
+
+```
+var someVar; //is undefined
+/*
+Adding a string to an undefined variable will present "undefined" as part of the resulting string. 
+Adding a number to undefined with result in NaN (Not a Number)
+*/
+```
+
+```
+myVar = 7;
+myVar++ ;// is the same as myVar = myVar + 1;
+```
+
+### **Thoughts**:
+
+After skipping another day this week, I must admit that I still remember my Git branching, committing, pushing and merging routine pretty well. 
+
+I would like to start learning how to cope with merge conflicts. Need a group of collaborators for this. 
+
+It can be very boring to learn JavaScript from scratch, but I'm glad I do, because when I studied, back in 1996, it was a whole different eco-system and there were hardly any other web programmers around me. When I worked as a webmaster in Microsoft WebTV R&D in 2001, it was still referred to as Dynamic HTML. No one did web apps, even Ajax wasn't there yet, and definitely no one was talking about JSON. I kept on developing web products and then moved to more product and media work, but never really had to the chance to go back to the basics and build a formal understanding of the modern JS. So, as boring as it may be, I'm starting off from the very basics and building from there. 
+
+Believe in the process!!!
+
+### **Link to work**: 
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D6
+
+![Free Code Camp progress](images/20180104-freecodecamp-challenge-count.png)
+
 ## Day 5: January 3, 2018
 
 ### **Today's Progress**:
