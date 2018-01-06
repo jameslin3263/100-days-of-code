@@ -9,6 +9,112 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 7: January 6, 2018 - Complete CodeAcademy JavaScript Introduction, Started taking egghead.io's How to Contribute to an Open Source Project on GitHub. Jet-lag adaptation
+
+### **Today's Progress**:
+
+I've had to adapt my sleeping hours due to jet-lag, so date has moved one day forward and now each day of January is one number behind the day of coding :) (January 6th = R1D7)
+
+**Tip of the day**: Don't fly between Europe and Far East too often. 
+
+#### Completed JavaScript Introduction module by CodeAcademy.com. 
+
+Today's lesson: [Code Academy - Variables](https://www.codecademy.com/en/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables)
+
+![JavaScript Introduction complete](images/20180107-codeacdemy-javascript-introduction-complete.png)
+
+```
+const constantName = 'constant value and type';
+constantName = 'this throws an error'; //throws a TypeError: Assignment to constant variable.
+
+let variableName = 'variable value and possibly type';
+variableName = true; //this is ok, because variableName is a variable declared with let
+```
+
+JavaScript type **undefined**
+
+```
+let unsetVariable;
+console.log(unsetVariable); //prints undefined to the console
+```
+
+ES6 string interpolation using backticks
+
+![Backtick button on Macbook Air keyboard](images/20180106-backtick-button.jpg)
+
+```
+let myName = 'Tailor'; //assigned using single quotes
+let myCity = 'Hanoi';
+
+//backticks ` are not single quotes '
+//ES6 string interpolation is done using backticks `text ${variableName}`
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+```
+
+![JavaScript Introduction complete](images/20180107-codeacademy-progress.png)
+
+#### [How to contribute to a Github project](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+
+A very practical guide to actual contribution to projects on Github, using the web interface and git command line.
+
+**Tip:** In every Github repo you would like to contribute too, try to locate contribution related info. It would be a shame to fix a bug, then realize the original author would not accept it. Look for a CONTRIBUTING.md file in every repo before you write any code.
+
+* Forked https://github.com/eggheadio-github/stack-overflow-copy-paste
+
+```
+$ git clone git@github.com:tailorvj/stack-overflow-copy-paste.git
+$ cd stack-overflow-copy-paste
+```
+
+**New command!!!**
+
+This adds the original repo I forked from, as an origin repo to which I can send pull requests from the command line.
+
+```
+$ git remote add upstream https://github.com/eggheadio-github/stack-overflow-copy-paste.git
+```
+
+To get information about the upstream remote
+
+```
+$ git fetch upstream
+```
+
+Then, to make the local repo track changes on the upstream repo instead of our forked origin
+
+```
+$ git branch --set-upstream-to=upstream/master master
+```
+
+Now checkout a new branch (-b) locally
+
+```
+$ git checkout -b pr/padLeft
+```
+
+install project and run tests and build
+
+```
+$ npm install
+$ npm t && npm run build
+```
+
+Tomorrow I'll complete this excellent git contribution tutrial. Cheers, Tailor.
+
+### **Thoughts**:
+
+I'm still quite bored with the JavaScript level, but new features in ES6, such as const, let and string interpolation using backticks are just one example of new language features I should be aware of if I want to develop modern web apps. 
+
+I'm starting to see the light with git and Github, which means I can better collaborate with others after just a few days of commitment to this process. egghead.io's tutorial is great.
+
+Console based tutorials are more efficient. 
+
+### **Link to work**: 
+
+https://github.com/tailorvj/stack-overflow-copy-paste
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D7/log.md
+
 ## Day 6: January 5, 2018 - Git knowhow is getting stable, started a daily JS routine 36 challenges on free code camp
 
 ![Free Code Camp progress](images/20180104-freecodecamp-challenge-count.png)
