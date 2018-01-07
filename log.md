@@ -9,6 +9,33 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 8: January 7, 2018 - No progress, too much work
+
+### **Today's Progress**:
+
+I actually used 
+
+```
+$ git checkout -b R1D8
+```
+
+Instead of 
+
+```
+$ git branch R1D8
+$ git checkout R1D8
+```
+
+to write this log, without hesitation, as if I've typed it a million times before :)
+
+### **Thoughts**:
+
+I have to learn how to say no to spontaneous client hangouts. I'll try to get into coding during the day from now on and wrap it up at night by publishing the log.
+
+### **Link to work**: 
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D8/log.md
+
 ## Day 7: January 6, 2018 - Complete CodeAcademy JavaScript Introduction, Started taking egghead.io's How to Contribute to an Open Source Project on GitHub. Jet-lag adaptation
 
 ### **Today's Progress**:
