@@ -9,6 +9,82 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 9: January 8, 2018 - More JavaScript on free code camp and CodeAcademy
+
+### **Today's Progress**:
+
+Continued free code camp challenges from 36, up to challenge 73.
+
+Challenges passed:
+
+* Shopping List
+* Write Reusable JavaScript with Functions
+* Passing Values to Functions with Arguments
+* Global Scope and Functions
+* Local Scope and Functions
+* Global vs Local Scope in Functions
+* Return a Value from a Function with Return
+* Assignment with a Returned Value
+* Stand in Line
+* Understanding Boolean Values
+* Use Conditional Logic with If Statements
+* Comparison with the Equality Operator
+* Comparison with the Strict Equality Operator
+* Comparison with the Inequality Operator
+* Comparison with the Strict Inequality Operator
+* Comparison with the Greater Than Operator
+* Comparison with the Greater Than Or Equal To Operator
+* Comparison with the Less Than Operator
+* Comparison with the Less Than Or Equal To Operator
+* Comparisons with the Logical And Operator
+* Comparisons with the Logical Or Operator
+* Introducing Else Statements
+* Introducing Else If Statements
+* Logical Order in If Else Statements
+* Chaining If Else Statements
+
+Array manipulation:
+
+* **arrayVariable.push(x)** adds the value of x into the end of arrayVariable.
+* **var x = arrayVariable.pop()** removes the last member of arrayVariable and stores the removed member in x.
+* **var x = arrayVariable.shift()** removes the first member of arrayVariable and stores the removed member in x.
+* **arrayVariable.unshift(x)** add the value of into the beginning of arrayVariable.
+
+```
+var myArray = [[00,01],[10, 11]];
+myArray.push([20, 21]);
+//myArray now holds [[00,01],[10, 11],[20, 21]]
+
+var popValue = myArray.pop();
+//myArray now holds  [[00,01],[10, 11]]
+//popValue now holds [20, 21]
+
+var shiftValue = myArray.shift();
+//myArray now holds [10, 11]
+//shiftValue now holds [00,01]
+
+myArray.unshift(shiftValue);
+//myArray now holds  [[00,01],[10, 11]]
+```
+
+a queue function
+
+```
+function nextInLine(arr, item){
+	arr.push(item); //adds item to the end of the array
+	return arr.shift(); //removes the first item from the array and returns it;
+}
+```
+
+### **Thoughts**:
+
+I like the interactive nature of both free code camp and CodeAcademy. 
+
+### **Link to work**:
+
+https://www.freecodecamp.org/tailorvj
+https://github.com/tailorvj/100-days-of-code/tree/R1D9/log.md
+
 ## Day 8: January 7, 2018 - No progress, too much work
 
 ### **Today's Progress**:
