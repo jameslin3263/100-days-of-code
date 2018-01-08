@@ -9,7 +9,9 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
-## Day 9: January 8, 2018 - More JavaScript on free code camp and CodeAcademy
+## Day 9: January 8, 2018 - 36 more challenges on free code camp
+
+![free code camp 73](images/20170108-freecodecamp-progress-73.png)
 
 ### **Today's Progress**:
 
