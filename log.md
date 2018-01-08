@@ -9,9 +9,9 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
-## Day 9: January 8, 2018 - 36 more challenges on free code camp
+## Day 9: January 8, 2018 - 36 more challenges on free code camp and a weird git problem
 
-![free code camp 73](images/20180104-freecodecamp-challenge-count.png)
+![free code camp 73](images/20170108-freecodecamp-progress-73.png)
 
 ### **Today's Progress**:
 
@@ -81,6 +81,8 @@ function nextInLine(arr, item){
 ### **Thoughts**:
 
 I like the interactive nature of both free code camp and CodeAcademy. 
+
+I wanted to git commit --amend because of a last minute change to the log, but trying to push to origin R1D9 said I should do a pull before that. I did, but the MarkDown editor still showed the file as it was on my hard drive before the git pull. I saved the file again and expected to a change in git status, but nothing, I'm a bit confused. I will have to research this issue further tomorrow. Weird stuff!!!
 
 ### **Link to work**:
 
