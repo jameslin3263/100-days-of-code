@@ -9,6 +9,79 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 10: January 9, 2018 - How to deal with Git merge conflicts
+
+### **Today's Progress**:
+
+Yesterday I had an unplanned merge conflict. First, I have to be able to recreate the problem:
+
+* I branched from master into R1D9
+* updated log.md
+* added an image to the images folder
+* added and committed
+* pushed to origin R1D9
+* I realized I had the wrong image reference in the log.md file
+* I decided to --amend the local commit
+* tried to push origin again and had a conflict
+* then tried to merge into master and had another conflict
+* i tried the mergetool but it was too cryptic for me, especially since it is based on vim
+* So I didn't really understand what to do
+* I tried all kinds of things, including another commit, file removal and finally, somehow, got my code committed, but became frustrated from not understanding what's going one with my code history.
+
+So, git commits, merges and merge conflicts, what's up with you?
+
+Started reading chapter 3 of Pro Git book to have a deeper understanding of branching.
+
+#### Branching, checking out and the HEAD pointer
+
+Basically, git creates a snapshot every time we commit what's on the stage in the current branch. The HEAD is pointing to one snapshot on our local machine at a time. 
+
+It is encouraged to branch many times during a normal work day, to test various features in your code, before you merge it into master and push to server. 
+
+Merging is supposed to be easy, you simple have to understand what's the status of your branches, your commits and where the HEAD is currently at. Your working directory represents the file state of the branch your are currently on. 
+
+You only see one working directory, but its' contents are changing according to the branch and snapshot you are on at each moment. 
+
+Contents of a file in a test editor that is not well aware of git behavior, may be different than the contents of that file on disk when you checkout another branch than the one you were working on when the file was opened. 
+
+This has actually happened to me with MWeb Lite, the MarkDown editor I'm using for log authoring. I guess I should be more conservative with it from now on - opening and closing files before and after each checkout operation. 
+
+#### Branching and merging workflow example
+
+Steps:
+1. Do work on a website.
+2. Create a branch for a new feature.
+3. Do some work in that branch.
+4. Revert back to your production branch.
+5. Create a branch to add a hotfix. 
+6. After it's tested, merge the hotfix branch, and push to production.
+7. Switch back to your original story and continue working.
+
+```
+$ cd website-folder
+$ git checkout -b featurex
+$ git commit -a -m "I'm working on this feature. Haven't finished yet, but committing for the sake of sanity"
+$ git checkout master
+$ git checkout -b hotfix
+$ git commit -a -m "hotfix applied and tested"
+$ git checkout master
+$ git merge hotfix
+$ git push origin master
+$ git checkout featurex
+```
+
+This is a basic scenario in which a commit is done every time you want to move between branches. There are more complex scenarios than that, but this is what I'll stick to at this point, until I learn how to perform more complex scenarios.
+
+### **Thoughts**:
+
+I tried to move forward based on incomplete knowledge and got bitten :) I'm not afraid of that, as it's a great opportunity to dive deeper and better understand what I'm dealing with. 
+
+My next move with git will be to further investigate my rollback, snapshot, HEAD and merge conflict resolution techniques. It seems like a great system. I would definitely like to be able to help teams collaborate around code with it, but they will need some education before it can actually happen in an efficient manner.
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D10/log.md
+
 ## Day 9: January 8, 2018 - 36 more challenges on free code camp and a weird git problem
 
 ![free code camp 73](images/20170108-freecodecamp-progress-73.png)
