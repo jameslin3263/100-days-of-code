@@ -11,6 +11,8 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 ## Day 10: January 9, 2018 - How to deal with Git merge conflicts
 
+![Pro Git illustration git branch commits](images/20180109-pro-git-branch-commit-illustration.jpg)
+
 ### **Today's Progress**:
 
 Yesterday I had an unplanned merge conflict. First, I have to be able to recreate the problem:
@@ -42,7 +44,9 @@ Merging is supposed to be easy, you simple have to understand what's the status 
 
 You only see one working directory, but its' contents are changing according to the branch and snapshot you are on at each moment. 
 
-Contents of a file in a test editor that is not well aware of git behavior, may be different than the contents of that file on disk when you checkout another branch than the one you were working on when the file was opened. 
+Contents of a file in a text editor that is not well aware of git behavior, may be different than the contents of that file on disk when you checkout another branch than the one you were working on when the file was opened. 
+
+![MWeb Lite error message after a git branch checkout](images/20180109-mweb-error-message.png)
 
 This has actually happened to me with MWeb Lite, the MarkDown editor I'm using for log authoring. I guess I should be more conservative with it from now on - opening and closing files before and after each checkout operation. 
 
