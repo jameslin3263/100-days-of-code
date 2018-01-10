@@ -9,6 +9,28 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 11: January 10, 2018 - JS program flow control
+
+I tried to resume my lesson on CodeAcademy and got a 10 question quiz, so I took it ;)
+
+![CodeAcademy quiz result](images/20180110-codeacademy-quiz-result.png)
+
+### **Today's Progress**:
+
+Did some program flow control lessons on CodeAcademy. 
+
+Read about Github integration in Atom text editor and how to use it as a MarkDown editor. I will try it in the next few days and see whether I like it better than MWeb. 
+
+### **Thoughts**:
+
+Jumping between free code camp and code academy is good practice, because I can learn the same material twice without getting bored. 
+
+I don't know if I'm into starting to manage an editor like Atom. It seems too full of add-ons. 
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D11/log.md
+
 ## Day 10: January 9, 2018 - How to deal with Git merge conflicts
 
 ![Pro Git illustration git branch commits](images/20180109-pro-git-branch-commit-illustration.jpg)
