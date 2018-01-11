@@ -9,6 +9,45 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 12: January 11, 2018 - JS program flow control on freecodecamp.org - 81 challenges done so far
+
+![completed 81 challenges on free code camp](image/20180111-freecodecamp-progress.png)
+
+### **Today's Progress**:
+
+More program flow control, this time with https://www.freecodecamp.org
+
+if, else if, else code blocks.
+
+switch-case value+type comparison block:
+
+```
+switch(val){
+	case x: //val === x
+		//do something;
+		break;
+	case y: //val === y
+		//do something else;
+		break;
+	case z: //val === z
+		//do something different;
+		break;
+	default:
+		//do something unanticipated;
+}
+```
+
+I learned a basic blackjack card counting technique. 
+
+### **Thoughts**:
+
+Always nice to get back to the basics. Challenges are getting more complex and take more time. I need a better system for repetition, such as flash cards. 
+
+### **Link to work**:
+
+https://www.freecodecamp.org/tailorvj
+https://github.com/tailorvj/100-days-of-code/tree/R1D12/log.md
+
 ## Day 11: January 10, 2018 - JS program flow control
 
 I tried to resume my lesson on CodeAcademy and got a 10 question quiz, so I took it ;)
