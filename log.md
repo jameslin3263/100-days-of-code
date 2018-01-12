@@ -11,7 +11,7 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 ## Day 12: January 11, 2018 - JS program flow control on freecodecamp.org - 81 challenges done so far
 
-![completed 81 challenges on free code camp](image/20180111-freecodecamp-progress.png)
+![completed 81 challenges on free code camp](images/20180111-freecodecamp-progress.png)
 
 ### **Today's Progress**:
 
