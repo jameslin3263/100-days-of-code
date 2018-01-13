@@ -9,6 +9,148 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 14: January 13, 2018 - JavaScript basics and tools in the wild, Beaker P2P web and DAT protocol
+
+![Array Explorer](images/20180113-array-explorer.png)
+
+### **Today's Progress**:
+
+Read a couple of articles about ES6 arrow functions and Objects. Located a couple of cool tools for Array and Object examination. 
+
+#### null == undefined, but null !== undefined
+
+null and undefined are different types in JavaScript.
+
+* null is identified by JS as object, while undefined is identified as a primitive. They are not the same type.
+* They are both evaluated as false in a logical test.
+
+For example, the following code will print into the console:
+
+```
+var n = null;
+var u; //undefined because a value hasn't been assigned to u
+
+if (!(n || u)){
+	console.log(n); //null
+	console.log(u); //undefined
+	console.log("both null and undefined are false");
+}
+else {
+	console.log("this will not happen, since both are evaluated as false");
+}
+```
+
+#### Arrow functions
+
+Have 2 main features:
+1. A shorter syntax then typical functions
+2. No binding of `this` 
+
+```
+function myFunctionAddsOne(myParam){
+	return myParam++;
+}
+```
+
+is equal to 
+
+```
+const myFunctionAddsOne = myParam => myParam++;
+var shouldBeEqualTo4 = myFunctionAddsOne(3);
+console.log(shouldBeEqualTo4);
+```
+
+The above is a very simplistic example though, that doesn't represent the full power of arrow functions. They really shine when defining anonymous functions within other functions. 
+
+```
+function Counter() {
+  	this.num = 0;
+  	
+	this.timer = setInterval(() => {
+	    this.num++;
+	    console.log(this.num);
+	  }, 1000);
+}
+```
+
+When creating a new instance of Counter(), we get
+
+```
+var d = new Counter();
+// 1
+// 2
+// 3
+// ...
+```
+
+don't forget to
+
+```
+clearInterval(d.timer);
+// to stop the eternal loop from running every second
+```
+
+
+In the example above, using a regular anonymous function instead of
+
+```
+() => {....}
+```
+
+, would result in 
+
+```
+var b = new Counter();
+// NaN
+// NaN
+// NaN
+// ...
+```
+
+don't forget to
+
+```
+clearInterval(b.timer);
+// to stop the eternal loop from running every second
+```
+
+The arrow function format
+
+```
+() => {....}
+```
+
+keeps `this` in the context of the mother function it is defined within. 
+
+Found 2 useful tools for Object and Array exploration:
+[JavaScript Object Explorer](https://sdras.github.io/object-explorer/) and [JavaScript Array Explorer](https://sdras.github.io/array-explorer/) by [Sarah Drasner](https://twitter.com/sarah_edo)
+
+#### Beaker dat P2P websites and web apps
+
+Installed Beaker Browser and looked into it a little bit. Registered to dat://fritter.hashbase.io and followed some users there. 
+
+Reading about @taravancil's dat-https workflow for publishing a website using hugo, dat and dathttpd to both DAT (Bearker P2P network) and https (WWW) using the same codebase. She is the coder of Fritter. 
+
+### **Thougts**:
+
+Taking a little trip into the wilderness during the weekend is a nice thing to do. So reading and documenting some extra basic JS knowledge makes me feel good. Although I feel like I have to put in some effort into freecodecamp and CodeAcademy as well. I might do that as well :)
+
+I'd like to start moving and manipulating data between arrays and objects and build some utility functions of my own. 
+
+I've already forgotten a few things I've learned in the past couple of weeks and it feels like I need some practice that integrates all of my previous knowledge. I'm considering writing my own quizzes on top of the basic quizzes provided by learning platforms. Memory works best when you use things on a daily basis and integrate new knowledge with previous concepts. 
+
+The location changing effect: I have a lot more social interactions in Hanoi than in Kaohsiung, It makes it harder for me to make time for studying, so I guess I'm going to have to focus and make sure I don't drop this challenge. 
+On top of that, it's a busy time with my various work projects. I keep telling myself "This is important, you can make it!".
+
+Beaker seems to be super interesting as a P2P extension of the web. It has potential to become it's own ecosystem. I should research it further and experiment with it.
+
+Fritter, the P2P Twitter clone, is reason enough to start using it on a daily basis I guess. I think my JavaScript knowledge might be put into good use there eventually. 
+I have found Fritter to be pretty limited though, and saying it is a Twitter clone is very far from reality at the moment of writing, because it doesn't support the most basic features of Twitter, such as #hashtags, @mentions and RT's. 
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D14/log.md
+
 ## Day 13: January 12, 2018 - Day off for organizing in Hanoi
 
 ### **Today's Progress**:
