@@ -9,6 +9,25 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 13: January 12, 2018 - Day off for organizing in Hanoi
+
+### **Today's Progress**:
+
+I've just move to Hanoi on Wednesday and I needed some time to recover from travel and organize necessities in the new location. 
+
+The night before I'd actually forgotten to push and tweet, so I did that in the morning. 
+
+### **Thoughts**:
+
+Traveling is something I like doing once a month max. Once in 2 or 3 months is even better. I love Hanoi!!!
+
+Running a github branch-commit-merge-push sequence in just a few seconds makes me smile :)
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D13/log.md
+
+
 ## Day 12: January 11, 2018 - JS program flow control on freecodecamp.org - 81 challenges done so far
 
 ![completed 81 challenges on free code camp](images/20180111-freecodecamp-progress.png)
