@@ -9,6 +9,34 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 15: January 14, 2018 - Completed program flow control on CodeAcademy
+
+![JS Program flow control badge](images/20180114-codeacademy-control-flow-badge.png)
+
+### **Today's Progress**:
+
+I did CodeAcademy's version of program flow. They've added a section about a useful program flow control mechanism - the ternary operator:
+
+```
+isSomeExpressionTrue ? thisHappensIfTrue() : thisHappensIfFalse();
+```
+
+It's a concise alternative for an if/else.
+
+Now starting Functions
+
+### **Thoughts**:
+
+The https://www.freecodecamp.org vs https://www.codecademy.com redundancy path works. It allows me to go twice through the same concepts and I feel I'm integrating knowledge better this way. 
+
+Supporting fellow #100DaysOfCode challenge participants on Twitter feels great and motivates me to keep on going too. It's a very strong transitive social concept in the design of this campaign. 
+
+I'd like to keep on diving into the world of Git. I'll invest some time reading Pro Git tomorrow.
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D15/log.md
+
 ## Day 14: January 13, 2018 - JavaScript basics and tools in the wild, Beaker P2P web and DAT protocol
 
 ![Array Explorer](images/20180113-array-explorer.png)
