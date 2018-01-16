@@ -9,6 +9,29 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 17: January 16, 2018 - Pro Git branching - second run (a work in progress)
+
+![Merging multiple branches using a common ancestor](images/20180117-pro-git-branching-screenshot.jpg)
+
+### **Today's Progress**:
+
+Went through the branching chapter of Pro Git again, and did an internal integration process. It's amazing how clearer things become when you read them day after day. I'm going to keep on doing this for the next few days until I have a presentation that properly explains the subject.
+
+Forked [reveal.js](https://github.com/hakimel/reveal.js) for the sake of keeping the presentation open-source. 
+
+### **Thoughts**:
+
+Branching may be the most important part of the git system. It is a bit complex, but I believe it can be made simpler by some visual explanation and proper exercises. 
+
+I am going to produce a presentation that explains this process and the options within it and post it online for the community to enjoy. 
+
+I've been very conservative with my branching and merging so far. This is going to change very soon :)
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D17/log.md
+
+
 ## Day 16: January 15, 2018 - Read Pro Git branching chapter
 
 Read Pro Git branching chapter. No output
