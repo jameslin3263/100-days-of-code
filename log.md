@@ -9,6 +9,10 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 16: January 15, 2018 - Read Pro Git branching chapter
+
+Read Pro Git branching chapter. No output
+
 ## Day 15: January 14, 2018 - Completed program flow control on CodeAcademy
 
 ![JS Program flow control badge](images/20180114-codeacademy-control-flow-badge.png)
