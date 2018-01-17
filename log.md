@@ -9,6 +9,28 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 18: January 17, 2018 - Started git-playground, a Git tutorial repo
+
+Fork it out and let me know what you think:
+https://github.com/tailorvj/git-playground/
+
+![git-playground repo screenshot](images/20180117-git-playground-screenshot.png)
+
+### **Today's Progress**:
+
+I've taken a serious leap forward today with my Git studies and started a new Github repo that actually teaches step-by-step, the basics of Git, in an experiential manner, based on my experience in the past couple of weeks. 
+
+It's a beginning of something. Let's see how it evolves.
+
+### **Thoughts**:
+
+I think it's going to be useful for many other people, because I've put into it knowledge and progress steps that I've had to make efforts to achieve on my own, based on existing resources I've found online. I'm going to teach myself and others how to properly Git it! It's my birthday present to myself. January 18th is already here actually. I need to get some sleep. 
+
+### **Link to work**:
+
+https://github.com/tailorvj/git-playground/
+https://github.com/tailorvj/100-days-of-code/tree/R1D18/log.md
+
 ## Day 17: January 16, 2018 - Pro Git branching - second run (a work in progress)
 
 ![Merging multiple branches using a common ancestor](images/20180117-pro-git-branching-screenshot.jpg)
