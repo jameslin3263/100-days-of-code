@@ -9,6 +9,109 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 19: January 18, 2018 - freecodecamp.org objects
+
+![freecodecamp.org progress](images/20180118-freecodecamp-progress.jpg)
+
+### **Today's Progress**:
+
+Done some object related challenges on freecodecamp.org
+
+Summary of lessons learned:
+
+An object is different from an Array. It has properties that can be accessed and modified using dot notation. 
+
+For example
+
+```
+var propertyOneValue = 1;
+var propertyTwoValue = "Two";
+var propertyThreeValue = false;
+
+var myObject = {
+	"firstProperty": propertyOneValue,
+	"secondProperty": propertyTwoValue,
+	"thirdProperty": propertyThreeValue
+};
+
+console.log(myObject.firstProperty); //prints 1
+console.log(myObject.secondProperty); //prints Two
+console.log(myObject.thirdProperty); //prints false
+
+console.log(myObject[firstProperty]); //prints 1
+console.log(myObject[secondProperty]); //prints Two
+console.log(myObject[thirdProperty]); //prints false
+
+//Modifying object property values
+myObject.firstProperty = 11;
+myObject.secondProperty = "Twenty two";
+myObject.thirdProperty = true;
+
+console.log(myObject[firstProperty]); //prints 11
+console.log(myObject[secondProperty]); //prints Twenty two
+console.log(myObject[thirdProperty]); //prints true
+```
+
+Accessing object properties can be done using either dot notation or square brackets, for both getting and setting values.
+
+```
+Object.hasOwnProperty(propname)
+```
+
+an built-in Object method that returns true if Object has a property with the name defined in propname variable. For example:
+
+```
+var myObject = {
+	"thisReturnsTrue": "Some value"
+}
+
+console.log(myObject.hasOwnProperty("thisReturnsTrue")); prints true to the console
+console.log(myObject.hasOwnProperty("thisReturnsFalse")); prints false to the console
+```
+
+#### Complex Data Structures - Object and Array combinations
+
+Objects may be part of Arrays and vice versa. In order to access the data, it is possible to combine Object and Array data access notation. For example:
+
+```
+var myDataStruct = [
+	{
+		"dataObjName": "first object",
+		"myDataAsArray": [
+			"One",
+			"Two",
+			"Three"
+		]
+	}
+	{
+		"dataObjName": "second object",
+		"myDataAsArray": [
+			"Four",
+			"Five",
+			"Six"
+		]
+	}
+];
+```
+
+In order to access the value "Two", for example:
+
+```
+var two = myDataStruct[0].myDataAsArray[1];
+console.log(two); //will output Two
+```
+
+### **Thoughts**:
+
+This is one of the most useful and error prone techniques for dealing with JSON probably. I should take many more lessons and tests to perfect it. 
+
+I need some public web services I can consume data from and play around with. 
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D19/log.md
+
+
 ## Day 18: January 17, 2018 - Started git-playground, a Git tutorial repo
 
 Fork it out and let me know what you think:
