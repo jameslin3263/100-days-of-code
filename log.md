@@ -9,6 +9,28 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 20: January 19, 2018 - CodeAcademy.com functions
+
+![freecodecamp.org progress](images/20180119-codeacademy-functions-complete.png)
+
+### **Today's Progress**:
+
+I've completed the entire CodeAcademy functions section. 
+
+One of the interesting things I've learned is how to create a single parameter one line arrow function like this:
+
+```
+const mySquareFunction = myParameter => myParameter * myParaemter; //no parentheses anywhere, not even around the parameter.
+```
+
+### **Thoughts**:
+
+Every day we learn something new. 
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D20/log.md
+
 ## Day 19: January 18, 2018 - freecodecamp.org objects
 
 ![freecodecamp.org progress](images/20180118-freecodecamp-progress.jpg)
