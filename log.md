@@ -38,18 +38,18 @@ console.log(myObject.firstProperty); //prints 1
 console.log(myObject.secondProperty); //prints Two
 console.log(myObject.thirdProperty); //prints false
 
-console.log(myObject[firstProperty]); //prints 1
-console.log(myObject[secondProperty]); //prints Two
-console.log(myObject[thirdProperty]); //prints false
+console.log(myObject["firstProperty"]); //prints 1
+console.log(myObject["secondProperty"]); //prints Two
+console.log(myObject["thirdProperty"]); //prints false
 
 //Modifying object property values
 myObject.firstProperty = 11;
 myObject.secondProperty = "Twenty two";
 myObject.thirdProperty = true;
 
-console.log(myObject[firstProperty]); //prints 11
-console.log(myObject[secondProperty]); //prints Twenty two
-console.log(myObject[thirdProperty]); //prints true
+console.log(myObject["firstProperty"]); //prints 11
+console.log(myObject["secondProperty"]); //prints Twenty two
+console.log(myObject["thirdProperty"]); //prints true
 ```
 
 Accessing object properties can be done using either dot notation or square brackets, for both getting and setting values.
