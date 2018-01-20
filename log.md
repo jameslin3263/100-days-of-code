@@ -9,6 +9,135 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 21: January 20, 2018 - Real world JSON hell
+
+![From API to the page](images/20180120-jsfiddle-screenshot-fatboy-slim.png)
+
+### **Today's Progress**:
+
+I did some real world JavaScript Object and Array research and experimentation, to test out my new skills. 
+
+First, I located an API that would provide me with real world data - [last.fm](https://www.last.fm/api)
+
+I would like to do complex things with such data in the future, for example, filtering and iterating through parts of it to display something meaningful to the user, so I first researched this a bit. 
+
+What I've come up with is [a jQuery code by HarbyUK that makes an ajax request to last.fm API Artist endpoint an receives a JSONP response](https://stackoverflow.com/questions/21956358/can-anyone-provide-a-code-example-for-accessing-this-last-fm-api/22021022#22021022). 
+
+```
+$.ajax({
+    type : 'GET',
+    url : 'https://ws.audioscrobbler.com/2.0/',
+    data : 'method=artist.getinfo&' +
+           'artist=Fatboy+Slim&' +
+           'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+           'format=json',
+    dataType : 'jsonp',
+    success : function(data) {
+        // Handle success code here
+    },
+    error : function(code, message){
+        // Handle error here
+    }
+});
+
+```
+I started by implementing the success block in a way that lets me have the object response I get from the server for further examination
+
+```
+   success : function(data) {
+        // Handle success code here
+        $('#everything').append(JSON.stringify(data)); 
+        //#everything is the id of a HTML <PRE> element 
+        //I decided to throw the stringified JSON into.
+    },
+```
+
+The result wasn't pretty, so I searched and found [JSONViewer](http://jsonviewer.stack.hu/), an online tool that lets you examine JSON objects, and I examined the object structure a bit in it - Very complex, and potentially unpredictable JS Object. This got me thinking... 
+
+[How do you loop through a complex JSON tree of objects and arrays in JavaScript?](https://www.quora.com/How-do-you-loop-through-a-complex-JSON-tree-of-objects-and-arrays-in-JavaScript/answer/Steve-Schafer-2)
+
+The JSON response has to be parsed somehow, so I've locate a piece of code that does something basic and smart: It runs down the Object tree and classifies each branch it comes across as one of three types:
+
+* Object
+* Array
+* Primitive
+
+and treats it accordingly. Here is the code for this:
+
+```
+function traverse(x, level) {
+  if (isArray(x)) {
+    traverseArray(x, level);
+  } else if ((typeof x === 'object') && (x !== null)) {
+    traverseObject(x, level);
+  } else {
+    console.log(level + x);
+  }
+}
+
+function isArray(o) {
+  return Object.prototype.toString.call(o) === '[object Array]';
+}
+
+function traverseArray(arr, level) {
+  console.log(level + "<array>");
+  arr.forEach(function(x) {
+    traverse(x, level + "  ");
+  });
+}
+
+function traverseObject(obj, level) {
+  console.log(level + "<object>");
+  for (var key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      console.log(level + "  " + key + ":");
+      traverse(obj[key], level + "    ");
+    }
+  }
+}
+
+```
+
+I can't fully understand the purpose of the level parameter in the traverse function at the moment, so I would like to edit it, but I don't have time left for this today, so I'll do it another day. It's a nice piece of code though. 
+
+### **Thoughts**:
+
+I felt like experimenting a bit and playing with what I've learned so far. It was a lot of fun, but one big mess. I think the results are pretty good though. I'll give it another run next weekend or maybe the weekend after it. This is also a good guide into where I'd like to be with my JS technique - I'd like to be able to build code that chews data and spits out exactly what I expect it to on the other side. I will get there. 
+
+Artists similar to Fatboy Slim:
+
+```
+		"similar": 
+		{
+      "artist": [
+        {
+          "name": "The Chemical Brothers",
+          "url": "https://www.last.fm/music/The+Chemical+Brothers"
+        },
+        {
+          "name": "Apollo 440",
+          "url": "https://www.last.fm/music/Apollo+440"        
+        },
+        {
+          "name": "Propellerheads",
+          "url": "https://www.last.fm/music/Propellerheads"
+        },
+        {
+          "name": "The Crystal Method",
+          "url": "https://www.last.fm/music/The+Crystal+Method"
+        },
+        {
+          "name": "Beats International",
+          "url": "https://www.last.fm/music/Beats+International"
+        }]
+		}
+```
+
+### **Link to work**:
+
+http://jsfiddle.net/h000amLu/5/#run
+https://github.com/tailorvj/100-days-of-code/tree/R1D21/log.md
+
 ## Day 20: January 19, 2018 - CodeAcademy.com functions
 
 ![freecodecamp.org progress](images/20180119-codeacademy-functions-complete.png)
