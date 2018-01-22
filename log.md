@@ -32,7 +32,7 @@ http://ws.audioscrobbler.com/2.0/?
 * format=json
 ```
 
-You have may have noticed that the artist name contains a typo. Thanks to the autocorrect=1 mechanism, last.fm search may fix some populrar typos. 
+You may have noticed that the artist name contains a typo. Thanks to the autocorrect=1 mechanism, last.fm search may fix some popular typos. 
 
 #### artist.getInfo URL Parameters
 **artist** (Required (unless mbid)] : The artist name
@@ -81,13 +81,21 @@ It has an API and can be useful for some primitive web AR experiments.
 **last.fm API docs of interesting endpoints**
 
 https://www.last.fm/api/show/artist.getSimilar
+
 https://www.last.fm/api/show/artist.getTopTags
+
 https://www.last.fm/api/show/artist.getTopTracks
+
 https://www.last.fm/api/show/track.getInfo
+
 https://www.last.fm/api/show/track.getSimilar
+
 https://www.last.fm/api/show/track.getTopTags
+
 **these two probably require authentication**
+
 https://www.last.fm/api/show/track.scrobble 
+
 https://www.last.fm/api/show/track.updateNowPlaying
 
 ### **Link to work**:
