@@ -9,6 +9,91 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 23: January 22, 2018 - last.fm API research - phase 2
+
+### **Today's Progress**:
+
+I'm getting to know the last.fm REST API. It is public and does not require authentication, so I can get objects, examine them and get pieces of data from them. 
+
+For example, the following URL returns an artist object in JSON. This API endpoint can also be called from an ajax request and deliver a callback function. 
+
+```
+http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Propellerheads&api_key=57ee3318536b23ee81d6b27e36997cde&&format=json
+```
+
+Let's break apart an example request URL parameters:
+```
+http://ws.audioscrobbler.com/2.0/?
+* method=artist.getinfo&
+* artist=Propellerheadz&
+* autocorrect=1&
+* username=tailorvj
+* api_key=57ee3318536b23ee81d6b27e36997cde&
+* format=json
+```
+
+You have may have noticed that the artist name contains a typo. Thanks to the autocorrect=1 mechanism, last.fm search may fix some populrar typos. 
+
+#### artist.getInfo URL Parameters
+**artist** (Required (unless mbid)] : The artist name
+mbid (Optional) : The musicbrainz id for the artist
+**lang** (Optional) : The language to return the biography in, expressed as an ISO 639 alpha-2 code.
+**autocorrect**[0|1] (Optional) : Transform misspelled artist names into correct artist names, returning the correct version instead. The corrected artist name will be returned in the response.
+**username** (Optional) : The username for the context of the request. If supplied, the user's playcount for this artist is included in the response.
+**api_key** (Required) : A Last.fm API key.
+
+I've used JSONViewer to display the object tree
+
+This is the GET URL
+```
+http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Propellerheadz&autocorrect=1&api_key=57ee3318536b23ee81d6b27e36997cde&&format=json
+```
+
+![Object data tree, presented visually in JSONViewer](images/20180122-jsonviewr-treeview-screenshot.png)
+
+Object data tree, presented visually in JSONViewer
+
+```
+http://jsonviewer.stack.hu/#http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Propellerheadz&autocorrect=1&api_key=57ee3318536b23ee81d6b27e36997cde&&format=json
+```
+
+I'm looking for an API explorer that will allow me explore the last.fm API, run requests and filter them. Let me know if you have a good one.
+
+Tomorrow I'll start laying some code and access specific locations in the structure and iterate on Arrays.
+
+### **Thoughts**:
+
+It seems to be hard to locate a general purpose API explorer, so I will start by using JSONViewer.
+
+I'm interested in complex data objects. Since last.fm has a public REST API, I can easily retrieve data object from it, examine their structure and read their properties with my code. 
+
+Found https://poly.google.com and it has an [API](https://developers.google.com/apis-explorer/#p/poly/v1/).
+
+It has an API and can be useful for some primitive web AR experiments. 
+
+2 technologies that may enable this scenario are:
+
+* Snapchat lenses
+* Transparent window in ARCore/ARKit
+* [AR.js](https://medium.com/arjs/augmenting-the-web-page-e893f2d199b8)
+* Other options I'm not aware of ATM.
+
+**last.fm API docs of interesting endpoints**
+
+https://www.last.fm/api/show/artist.getSimilar
+https://www.last.fm/api/show/artist.getTopTags
+https://www.last.fm/api/show/artist.getTopTracks
+https://www.last.fm/api/show/track.getInfo
+https://www.last.fm/api/show/track.getSimilar
+https://www.last.fm/api/show/track.getTopTags
+**these two probably require authentication**
+https://www.last.fm/api/show/track.scrobble 
+https://www.last.fm/api/show/track.updateNowPlaying
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D23/log.md
+
 ## Day 22: January 21, 2018 - Did a recap of variable scope on CodeAcademy
 
 ![tailorvj at work on MacBook Air](images/20180121-codeacademy-progress-screenshot.jpg)
