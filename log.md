@@ -9,6 +9,22 @@ I'm a media strategist, so I have a tendency to be very well planned and organiz
 
 01001010111010101001010100101001010010101001010100101011
 
+## Day 22: January 21, 2018 - Did a recap of variable scope on CodeAcademy
+
+![tailorvj at work on MacBook Air](images/20180121-codeacademy-progress-screenshot.jpg)
+
+### **Today's Progress**:
+
+Did 7 lessons on CodeAcadmey Intro to JS course, focusing on variable scope.
+
+### **Thoughts**:
+
+My studying technique of running FCC and CA in parallel proves itself time and again as a good way to let concepts sink into memeory.
+
+### **Link to work**:
+
+https://github.com/tailorvj/100-days-of-code/tree/R1D22/log.md
+
 ## Day 21: January 20, 2018 - Real world JSON hell
 
 ![From API to the page](images/20180120-jsfiddle-screenshot-fatboy-slim.png)
